@@ -25,6 +25,9 @@ travis-test: OPTIONAL = true
 travis-test: lint report-cov
 	@true
 
+readme:
+	@./node_modules/.bin/md-magic
+
 bench:
 	@./benchmark/benchmark.js
 
