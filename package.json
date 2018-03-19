@@ -1,26 +1,17 @@
 {
   "name": "cheerio",
   "version": "1.0.0-rc.2",
-  "description": "Tiny, fast, and elegant implementation of core jQuery designed specifically for the server",
+  "description":
+    "Tiny, fast, and elegant implementation of core jQuery designed specifically for the server",
   "author": "Matt Mueller <mattmuelle@gmail.com> (mat.io)",
   "license": "MIT",
-  "keywords": [
-    "htmlparser",
-    "jquery",
-    "selector",
-    "scraper",
-    "parser",
-    "html"
-  ],
+  "keywords": ["htmlparser", "jquery", "selector", "scraper", "parser", "html"],
   "repository": {
     "type": "git",
     "url": "git://github.com/cheeriojs/cheerio.git"
   },
   "main": "./index.js",
-  "files": [
-    "index.js",
-    "lib"
-  ],
+  "files": ["index.js", "lib"],
   "engines": {
     "node": ">= 0.6"
   },
@@ -34,14 +25,14 @@
   },
   "devDependencies": {
     "benchmark": "^2.1.0",
-    "coveralls": "^2.11.9",
+    "coveralls": "^3.0.0",
     "eslint": "^4.18.1",
     "eslint-config-prettier": "^2.9.0",
     "expect.js": "~0.3.1",
     "husky": "^0.14.3",
     "istanbul": "^0.4.3",
     "jquery": "^3.0.0",
-    "jsdom": "^9.2.1",
+    "jsdom": "^11.6.2",
     "markdown-magic": "^0.1.21",
     "markdown-magic-github-contributors": "^0.0.3",
     "lint-staged": "^7.0.0",
@@ -57,14 +48,7 @@
     "singleQuote": true
   },
   "lint-staged": {
-    "*.js": [
-      "pretter --write",
-      "eslint --fix",
-      "git add"
-    ],
-    "*.json": [
-      "pretter --write",
-      "git add"
-    ]
+    "*.js": ["prettier --write", "eslint --fix", "git add"],
+    "*.json": ["prettier --write", "git add"]
   }
 }
